@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6733060439316719920}
   m_Layer: 0
   m_Name: e2Bullet
-  m_TagString: Untagged
+  m_TagString: Enemigo2Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,4 +150,4 @@ MonoBehaviour:
   rb: {fileID: 1775180580689273691}
   direction: {x: -1, y: 0}
   timer: 0
-  maxTimer: 7
+  maxTimer: 5
