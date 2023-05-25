@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementNivel3 : MonoBehaviour
 {
-    public float speed = 10;
+    public float speed = 8;
 
     private Rigidbody2D Rb2D;
     void Start()
@@ -19,6 +19,13 @@ public class PlayerMovementNivel3 : MonoBehaviour
         MoveX = Input.GetAxisRaw("Horizontal");
         MoveY = Input.GetAxisRaw("Vertical");
 
-        Rb2D.velocity = new Vector2(MoveX*speed, MoveY*speed).normalized;
+        Rb2D.velocity = new Vector2(MoveX*speed, MoveY*speed);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
