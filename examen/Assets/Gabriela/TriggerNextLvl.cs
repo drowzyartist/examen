@@ -9,7 +9,8 @@ public class TriggerNextLvl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Nivel3");
+            SceneManager.LoadScene("nivel 4");
+            //nivel 3 no tiene nada
         }
     }
 }

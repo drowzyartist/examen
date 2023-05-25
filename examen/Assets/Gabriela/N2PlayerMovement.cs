@@ -38,7 +38,7 @@ public class N2PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemigo2Bullet"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
             SceneManager.LoadScene("Derrota");
         }
     }

@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
     }
     public void Nivel3()
     {
-        SceneManager.LoadScene("Nivel3");
+        SceneManager.LoadScene("nivel 4");
     }
     public void Créditos()
     {
