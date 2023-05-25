@@ -6,7 +6,7 @@ public class MenuManager : MonoBehaviour
 {
     public void Nivel1()
     {
-        SceneManager.LoadScene("Nivel1");
+        SceneManager.LoadScene("Scene1");
     }
     public void Nivel2()
     {

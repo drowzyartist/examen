@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - ReboteX
-  - ReboteY
-  - EnemyN1
-  - Bullet
-  - ClickNivel1
-  - ClickNivel2
-  - ClickNivel3
-  - ClickCreditos
+  tags: []
   layers:
   - Default
   - TransparentFX
