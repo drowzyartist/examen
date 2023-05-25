@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class N2PlayerMovement : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class N2PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemigo2Bullet"))
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("Derrota");
         }
     }
 }
