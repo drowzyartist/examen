@@ -5,9 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+<<<<<<< HEAD
   - Undefined
   - Enemigo2Bullet
   - Enemigo2
+=======
+  - Enemigo2Bullet
+>>>>>>> d890efeb3e2e7d2393b5d3ad30bc8ca0780731ae
   layers:
   - Default
   - TransparentFX
