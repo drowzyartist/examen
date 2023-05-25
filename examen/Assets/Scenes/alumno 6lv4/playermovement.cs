@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playermovement : MonoBehaviour
 {
@@ -54,7 +55,14 @@ public class playermovement : MonoBehaviour
         rb.rotation = aimAngle;
         //aim angle y aim direction, como su nombre lo indica nos ayudan a calcular el angulo y dirección, unity mismo las tiene :D
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemigo2Bullet"))
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("Derrota");
+        }
+    }
 }
 
 
