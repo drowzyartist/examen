@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 177152212}
   - component: {fileID: 177152214}
   - component: {fileID: 177152213}
+  - component: {fileID: 177152215}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -258,6 +259,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177152211}
   m_CullTransparentMesh: 1
+--- !u!114 &177152215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177152211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cce430b85a198744bcc89b89da136fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &182238625
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +639,7 @@ GameObject:
   - component: {fileID: 1279702375}
   - component: {fileID: 1279702374}
   - component: {fileID: 1279702378}
+  - component: {fileID: 1279702379}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -733,6 +747,19 @@ MonoBehaviour:
   timer: 0
   maxTimer: 60
   nameText: {fileID: 359382198}
+--- !u!114 &1279702379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279702373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6d8d0b18c4d14bbdd3c604c08344d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreditoText: {fileID: 177152213}
 --- !u!1 &1422936508
 GameObject:
   m_ObjectHideFlags: 0

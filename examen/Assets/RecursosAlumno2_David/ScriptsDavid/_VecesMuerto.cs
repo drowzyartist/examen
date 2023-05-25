@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class _VecesMuerto : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI DeadText;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        DeadText.text = $"Derrotas vistas:{_CounterDead.deadsCounter:0}";
     }
 }

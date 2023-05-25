@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class _CounterDead : MonoBehaviour
 {
-    public int deadCounter;
-    public int deadCall;
-    void Update()
+    public static int deadsCounter { get; private set; }
+
+    void Start()
     {
-        if (deadCall > 0)
-        {
-            deadCounter = deadCall;
-        }
+        deadsCounter += 1;
     }
 }
