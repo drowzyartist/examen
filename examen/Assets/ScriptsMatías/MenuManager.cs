@@ -6,7 +6,7 @@ public class MenuManager : MonoBehaviour
 {
     public void Nivel1()
     {
-        SceneManager.LoadScene("Nivel1");
+        SceneManager.LoadScene("Scene1");
     }
     public void Nivel2()
     {
@@ -18,6 +18,6 @@ public class MenuManager : MonoBehaviour
     }
     public void Créditos()
     {
-        SceneManager.LoadScene("Créditos");
+        SceneManager.LoadScene("Creditos");
     }
 }
