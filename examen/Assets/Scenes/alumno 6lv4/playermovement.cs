@@ -9,6 +9,9 @@ public class playermovement : MonoBehaviour
     private Vector2 movedirection;
     private Vector2 mousePosition;
     public Camera sceneCamera;
+    public weapon weapon;
+    //nos referimos al script
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,11 @@ public class playermovement : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
+
         //llamo a los inputs mismos del unity para ahorrarme especificar que teclas sirven para mover
+        if (Input.GetMouseButtonDown(0))
+        { weapon.fire(); }
+            // en este codigo 0 y 1 representn click derecho o izquierdo, solo disparare con 1 por eso elijo solo 1
         movedirection = new Vector2(moveX, moveY);
         mousePosition = sceneCamera.ScreenToWorldPoint(Input.mousePosition);
         //screen to world point es lo que nos permite identificar donde esta el mouse en la pantalla gracias a la cámara :D
