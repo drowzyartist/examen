@@ -32,4 +32,12 @@ public class N2PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal, vertical) * speed;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemigo2Bullet"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

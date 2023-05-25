@@ -21,14 +21,12 @@ public class Enemigo2DDispara : MonoBehaviour
 
     void Shoot()
     {
-        timer = Time.deltaTime;
+        timer += Time.deltaTime;
 
         if (timer > maxTimer)
         {
             GameObject obj = Instantiate(e2Bullet);
             obj.transform.position = transform.position;
-            obj.GetComponent<E2Bullet>().direction = E2Move.direction;
-
             timer = 0;
         }
     }

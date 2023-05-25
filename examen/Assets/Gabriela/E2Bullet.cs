@@ -15,7 +15,6 @@ public class E2Bullet : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        maxTimer = 7;
     }
 
     void Update()
@@ -34,10 +33,12 @@ public class E2Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+            //_CounterDead.deadCall += 1;
+            //aqui cambio de escena
         }
     }
 
-    void Timer()
+    void Timer() //cuanto dura en escena
     {
         timer += Time.deltaTime;
 

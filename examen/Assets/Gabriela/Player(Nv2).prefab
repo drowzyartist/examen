@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  rb: {fileID: 0}
+  rb: {fileID: 1625409460113082666}
   direction: {x: 0, y: 0}
 --- !u!1 &1625409460719527962
 GameObject:
