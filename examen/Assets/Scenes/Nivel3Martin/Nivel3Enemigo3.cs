@@ -6,11 +6,12 @@ using UnityEngine;
 public class Nivel3Enemigo3 : MonoBehaviour
 {
     public float AttackRange;
-    
-    private float TimeBetwenAttack;
+
+    private float Attack = 1;
+    public float NextAttack;
 
     public GameObject Proyectile;
-    
+
     private GameObject Objetctive;
     private Rigidbody2D Rb2D;
     // Start is called before the first frame update
@@ -27,21 +28,15 @@ public class Nivel3Enemigo3 : MonoBehaviour
         float distance = Vector2.Distance(transform.position, Objetctive.transform.position);
 
         //si la distancia es menor al rango de ataque, dispara
-        if(distance < AttackRange)
+        if (distance <= AttackRange && NextAttack < Time.time)
         {
-            if(TimeBetwenAttack <= 0)
-            {
-                Shoot();
-            }
-            else
-            {
-                TimeBetwenAttack -= Time.deltaTime;
-            }
+            Instantiate(Proyectile);
+            NextAttack = Time.time + Attack;
         }
     }
-
-    private void Shoot()
+    private void OnDrawGizmos()
     {
-        Instantiate(Proyectile, transform.position, quaternion.identity);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position,AttackRange);
     }
 }
