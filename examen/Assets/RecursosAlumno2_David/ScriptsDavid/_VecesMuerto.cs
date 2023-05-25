@@ -2,14 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletControler : MonoBehaviour
+public class _VecesMuerto : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    private void OnEnable()
-    {
-        Destroy(gameObject, 3.5f);
-    }
     void Start()
     {
         

@@ -6,6 +6,12 @@ TagManager:
   tags:
   - ReboteX
   - ReboteY
+  - EnemyN1
+  - Bullet
+  - ClickNivel1
+  - ClickNivel2
+  - ClickNivel3
+  - ClickCreditos
   layers:
   - Default
   - TransparentFX
